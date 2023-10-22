@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="" />
+    <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/allure-results/5575a0cb-e287-48f4-bd7e-f07f5aa19105-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/80ba7300-9365-4558-ad3d-ac593844279b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a99502e2-dc04-4cf4-857e-908a83d993fe-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c96e90ac-bae5-41aa-beeb-e4ef76dc23bc-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ebc2b7e2-a122-4b7e-b835-641f465ba313-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ec759fa4-0121-4108-a013-741549ef99ca-container.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/check_low_emission_filter.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/check_low_emission_filter.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +145,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SWG_Tests" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -201,7 +211,7 @@
     <option name="height" value="926" />
   </component>
   <component name="ProjectId" id="2LawmqlgWQMeJCkRRcN4XjXTmie" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
@@ -505,7 +515,7 @@
       <workItem from="1697618566507" duration="2178000" />
       <workItem from="1697977440874" duration="357000" />
       <workItem from="1697978218871" duration="667000" />
-      <workItem from="1697979636257" duration="747000" />
+      <workItem from="1697979636257" duration="4234000" />
     </task>
     <servers />
   </component>
