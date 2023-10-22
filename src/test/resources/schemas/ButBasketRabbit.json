@@ -1,0 +1,39 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "required": [
+    "success"
+  ],
+  "properties": {
+    "success": {
+      "$id": "#/properties/success",
+      "type": "object",
+      "required": [
+        "dateadd",
+        "price",
+        "quantity",
+        "datechange"
+      ],
+      "properties": {
+        "dateadd": {
+          "$id": "#/properties/success/properties/dateadd",
+          "type": "string"
+        },
+        "price": {
+          "$id": "#/properties/success/properties/price",
+          "type": "string"
+        },
+        "quantity": {
+          "$id": "#/properties/success/properties/quantity",
+          "type": "string"
+        },
+        "datechange": {
+          "$id": "#/properties/success/properties/datechange",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

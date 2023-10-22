@@ -1,0 +1,158 @@
+yandex*
+google*
+curl*
+log*
+*.log
+/1_files
+/image_parser
+/upload
+/bitrix/backup
+/dev
+*cache*
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.xml
+
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# JPEG 2000
+*.jp2
+*.j2k
+*.jpf
+*.jpx
+*.jpm
+*.mj2
+
+# JPEG XR
+*.jxr
+*.hdp
+*.wdp
+
+# Graphics Interchange Format
+*.gif
+
+# RAW
+*.raw
+
+# Web P
+*.webp
+
+# Portable Network Graphics
+*.png
+
+# Animated Portable Network Graphics
+*.apng
+
+# Multiple-image Network Graphics
+*.mng
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
+
+# X BitMap
+*.xbm
+
+# BMP
+*.bmp
+*.dib
+
+# ICO
+*.ico
+
+# 3D Images
+*.3dm
+*.max
+
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+# It's better to unpack these files and commit the raw source because
+# git has its own built in compression methods.
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.tgz
+*.bzip
+*.bz2
+*.xz
+*.lzma
+*.cab
+
+# Packing-only formats
+*.iso
+*.tar
+
+# Package management formats
+*.dmg
+*.xpi
+*.gem
+*.egg
+*.deb
+*.rpm
+*.msi
+*.msm
+*.msp
+
+.idea/
+/src/test/java/steps/RunnerTest.java
+/bitrix/backup/
+/bitrix/cache/
+/bitrix/catalog_export/
+/bitrix/managed_cache/
+/upload/resize_cache/
+/upload/iblock/
+/upload/main/
+node_modules/
+vendor/
+.DS_Store
+Thumbs.db
+/backup/*
+/upload/*
+/allure-results/
+/build/
+/target/
+
+dump.txt
+test_pay_order.txt
+*PVZ.json
+*сity.json
+
+# user files
+
+
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files are user-specific
+*.sublime-workspace
+
+# Project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using Sublime Text
+*.sublime-project
+
+test_pay_order.txt
+bitrix/js/ipol.iml/city.json
+bitrix/js/ipol.iml/references/PVZ.json
