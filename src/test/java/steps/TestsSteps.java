@@ -42,7 +42,7 @@ public class TestsSteps {
     @И ("Приняты куки")
     public  void приняты_куки() {
 
-        driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
+        driver.findElement(byCssSelector(".cookie_buttonb")).click(); //кликаем кнопку
 
 //        driver.quit();
     }
