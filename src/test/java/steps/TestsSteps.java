@@ -44,7 +44,7 @@ public class TestsSteps {
 
         driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
 
-//        driver.quit();
+        driver.quit();
     }
 
     @Тогда("Находим фильтр {string}")
