@@ -43,7 +43,7 @@ public class TestsSteps {
     @И ("Приняты куки")
     public  void приняты_куки() {
 
-        Assert.assertTrue(driver.findElement(byCssSelector(".cookiebutton")).isDisplayed());
+        Assert.assertTrue(driver.findElement(byCssSelector(".cookie_button")).isDisplayed());
         driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
 
 //        driver.quit();
