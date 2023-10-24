@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="">
+    <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="Test">
       <change afterPath="$PROJECT_DIR$/allure-results/5575a0cb-e287-48f4-bd7e-f07f5aa19105-container.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/80ba7300-9365-4558-ad3d-ac593844279b-result.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/a99502e2-dc04-4cf4-857e-908a83d993fe-container.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/c96e90ac-bae5-41aa-beeb-e4ef76dc23bc-result.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/ebc2b7e2-a122-4b7e-b835-641f465ba313-result.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/ec759fa4-0121-4108-a013-741549ef99ca-container.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/check_low_emission_filter.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/check_low_emission_filter.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +146,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "YugeneYak"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="afee69c9-2a5b-41e0-a66d-740a41067db6" />
+        <option name="url" value="https://github.com/YugeneYak/SWG.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/steps/BackgroundSteps.java" root0="FORCE_HIGHLIGHTING" />
@@ -302,6 +315,7 @@
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/SWG_Tests/src/test/java/features",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -311,14 +325,15 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="steps" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SWG_Tests\src\test\java\features" />
       <recent name="D:\Users\yugene\Documents\test\src\test\java\features" />
       <recent name="C:\Users\yugene\Documents\test\src\test\java\features" />
       <recent name="C:\Users\yugene\Documents\test\src\main\java\pages" />
       <recent name="C:\Users\yugene\Documents\test\src\test\java\steps" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="steps" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -515,8 +530,97 @@
       <workItem from="1697618566507" duration="2178000" />
       <workItem from="1697977440874" duration="357000" />
       <workItem from="1697978218871" duration="667000" />
-      <workItem from="1697979636257" duration="4234000" />
+      <workItem from="1697979636257" duration="10832000" />
     </task>
+    <task id="LOCAL-00001" summary="Test">
+      <option name="closed" value="true" />
+      <created>1697984861419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697984861420</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test">
+      <option name="closed" value="true" />
+      <created>1697984873449</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697984873449</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Test">
+      <option name="closed" value="true" />
+      <created>1697985300964</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697985300964</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test">
+      <option name="closed" value="true" />
+      <created>1697987562545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697987562545</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698042590967</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698042590967</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698045592466</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698045592466</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698045708657</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698045708657</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698046602781</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698046602781</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698059897529</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698059897529</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698124066705</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698124066705</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698124764220</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698124764220</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -619,6 +723,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.iml">
