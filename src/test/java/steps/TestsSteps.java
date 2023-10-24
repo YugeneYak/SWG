@@ -7,6 +7,7 @@ import cucumber.api.java.ru.Тогда;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
+import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,9 +43,15 @@ public class TestsSteps {
     @И ("Приняты куки")
     public  void приняты_куки() {
 
+        Assert.assertTrue(driver.findElement(byCssSelector(".cookiebutton")).isDisplayed());
         driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
 
 //        driver.quit();
+    }
+
+    @Тогда("Открываем меню каталога")
+    public  void Открываем_меню_каталога() {
+
     }
 
     @Тогда("Находим фильтр {string}")
@@ -66,18 +73,6 @@ public class TestsSteps {
             Elements nestedElements = doc.getAllElements();
 
             System.out.println("ParentElement HTML=" + nestedElements);
-
-//            for (Element nestedElement : nestedElements) {
-//                collectedTags.add(nestedElement.html()+"="+nestedElement.text());
-////                collectedText.add(nestedElement.text());
-//            }
-
-
-//            System.out.println("ParentElement HTML=" + outerHTML);
         }
-//        System.out.println("collectedTags HTML=" + collectedTags);
-//        System.out.println("collectedText HTML=" + collectedText);
-        // На этом этапе все вложенные элементы и их тексты сохранены в collectedTags и collectedText
     }
-
 }
