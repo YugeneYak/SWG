@@ -74,7 +74,7 @@ public class TestsSteps {
         } else {
             Assert.fail("Не найдены пункты меню: " + notFoundItems);
         }
-//            driver.quit();
+            driver.quit();
 
     }
 
