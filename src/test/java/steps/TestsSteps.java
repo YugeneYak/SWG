@@ -1,5 +1,6 @@
 package steps;
 
+import com.codeborne.selenide.SelenideElement;
 import cucumber.api.java.ru.Дано;
 import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.Тогда;
@@ -13,19 +14,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utils.Properties;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-import static com.codeborne.selenide.Selectors.byCssSelector;
-import static com.codeborne.selenide.Selectors.byXpath;
-
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.$;
 
 
 public class TestsSteps {
 
     private WebDriver driver; //добавляем поле driver
-
-//    private ElementsCollection filterButtons = $$(byXpath("//input[@name='color-temp']"));
 
     @Дано("Открыта страница сайта {string}")
 
@@ -34,10 +34,7 @@ public class TestsSteps {
         BaseSteps baseSteps = new BaseSteps();
         baseSteps.setupDriver(); // Вызов метода setupDriver() из класса BaseSteps
         driver = baseSteps.getDriver(); // присваиваем driver значение из BaseSteps
-
         driver.get("http://"+Properties.getBaseUrl()+text);
-
-
     }
 
     @И ("Приняты куки")
@@ -51,6 +48,36 @@ public class TestsSteps {
 
     @Тогда("Открываем меню каталога")
     public  void Открываем_меню_каталога() {
+//        driver.$(catalogMenuBlock)
+        Assert.assertTrue(driver.findElement(byId("cat_menu")).isDisplayed());
+        driver.findElement(byId("cat_menu")).click(); //кликаем кнопку
+    }
+
+    @И("Находим пункты меню")
+    public  void Находим_пункты_меню(List<String> menuItems) {
+        WebElement element = driver.findElement(byId("cat_menu_block"));
+        List<WebElement> menuLinks = element.findElements(byClassName("section_name"));
+        List<String> notFoundItems = new ArrayList<>();
+
+        for (String menuItem : menuItems) {
+            boolean found = false;
+            for (WebElement menuLink : menuLinks) {
+                if (menuLink.getText().equals(menuItem)) {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                notFoundItems.add(menuItem);
+            }
+        }
+
+        if (notFoundItems.isEmpty()) {
+            Assert.assertTrue("Все пункты меню найдены", true);
+        } else {
+            Assert.fail("Не найдены пункты меню: " + notFoundItems);
+        }
+            driver.quit();
 
     }
 
