@@ -47,7 +47,7 @@ public class TestsSteps {
     @Тогда("Открываем меню каталога")
     public  void Открываем_меню_каталога() {
 //        driver.$(catalogMenuBlock)
-//        Assert.assertTrue(driver.findElement(byId("cat_menu")).isDisplayed());
+        driver.findElement(byId("cat_menu")).isDisplayed();
         driver.findElement(byId("cat_menu")).click(); //кликаем кнопку Каталог
     }
 
