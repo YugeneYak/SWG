@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="Test">
-      <change afterPath="$PROJECT_DIR$/allure-results/5575a0cb-e287-48f4-bd7e-f07f5aa19105-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/80ba7300-9365-4558-ad3d-ac593844279b-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a99502e2-dc04-4cf4-857e-908a83d993fe-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c96e90ac-bae5-41aa-beeb-e4ef76dc23bc-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ebc2b7e2-a122-4b7e-b835-641f465ba313-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ec759fa4-0121-4108-a013-741549ef99ca-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/check_low_emission_filter.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -530,7 +525,7 @@
       <workItem from="1697618566507" duration="2178000" />
       <workItem from="1697977440874" duration="357000" />
       <workItem from="1697978218871" duration="667000" />
-      <workItem from="1697979636257" duration="21460000" />
+      <workItem from="1697979636257" duration="23200000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <option name="closed" value="true" />
@@ -644,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698490494180</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698491012248</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698491012248</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
