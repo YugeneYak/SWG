@@ -12,7 +12,7 @@
       <change afterPath="$PROJECT_DIR$/allure-results/ebc2b7e2-a122-4b7e-b835-641f465ba313-result.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/ec759fa4-0121-4108-a013-741549ef99ca-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/check_low_emission_filter.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -530,7 +530,7 @@
       <workItem from="1697618566507" duration="2178000" />
       <workItem from="1697977440874" duration="357000" />
       <workItem from="1697978218871" duration="667000" />
-      <workItem from="1697979636257" duration="10832000" />
+      <workItem from="1697979636257" duration="21460000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <option name="closed" value="true" />
@@ -620,7 +620,31 @@
       <option name="project" value="LOCAL" />
       <updated>1698124764220</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698124987092</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698124987092</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698125123959</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698125123959</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698490494180</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698490494180</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
