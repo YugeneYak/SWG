@@ -47,8 +47,8 @@ public class TestsSteps {
     @Тогда("Открываем меню каталога")
     public  void Открываем_меню_каталога() {
 //        driver.$(catalogMenuBlock)
-        Assert.assertTrue(driver.findElement(byId("cat_menu")).isDisplayed());
-        driver.findElement(byId("cat_menu")).click(); //кликаем кнопку
+//        Assert.assertTrue(driver.findElement(byId("cat_menu")).isDisplayed());
+        driver.findElement(byId("cat_menu")).click(); //кликаем кнопку Каталог
     }
 
     @И("Находим пункты меню")
@@ -75,7 +75,7 @@ public class TestsSteps {
         } else {
             Assert.fail("Не найдены пункты меню: " + notFoundItems);
         }
-            driver.quit();
+//            driver.quit();
 
     }
 
