@@ -12,6 +12,8 @@ import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Properties;
 
 import java.io.IOException;
@@ -46,8 +48,13 @@ public class TestsSteps {
 
     @Тогда("Открываем меню каталога")
     public  void Открываем_меню_каталога() {
-        driver.findElement(byId("cat_menu")).isDisplayed();
-        driver.findElement(byId("cat_menu")).click(); //кликаем кнопку Каталог
+//        driver.findElement(byId("cat_menu")).isDisplayed();
+//        driver.findElement(byId("cat_menu")).click(); //кликаем кнопку Каталог
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);  // ждем в течение 10 секунд
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(byId("cat_menu")));  // ожидаем, пока элемент не станет кликабельным
+
+        element.click();  // кликаем кнопку Каталог
     }
 
     @И("Находим пункты меню")
