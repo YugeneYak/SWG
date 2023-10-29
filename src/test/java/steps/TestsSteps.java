@@ -51,7 +51,7 @@ public class TestsSteps {
     public  void Открываем_меню_каталога() {
 //        driver.findElement(byId("cat_menu")).isEnabled();
 //        driver.findElement(byId("cat_menu")).click(); //кликаем кнопку Каталог
-        driver.findElement(byId(".cat_menu")).sendKeys(Keys.RETURN);
+        driver.findElement(byId("cat_menu")).sendKeys(Keys.RETURN);
 //        WebDriverWait wait = new WebDriverWait(driver, 10);  // ждем в течение 10 секунд
 //        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(byId("cat_menu")));  // ожидаем, пока элемент не станет кликабельным
 //
