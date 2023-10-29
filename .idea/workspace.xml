@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -524,7 +524,7 @@
       <workItem from="1697618566507" duration="2178000" />
       <workItem from="1697977440874" duration="357000" />
       <workItem from="1697978218871" duration="667000" />
-      <workItem from="1697979636257" duration="36288000" />
+      <workItem from="1697979636257" duration="37036000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <option name="closed" value="true" />
@@ -790,7 +790,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698569802277</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Test">
+      <option name="closed" value="true" />
+      <created>1698570967165</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1698570967165</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">

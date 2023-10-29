@@ -48,7 +48,7 @@ public class TestsSteps {
 
     @Тогда("Открываем меню каталога")
     public  void Открываем_меню_каталога() {
-        driver.findElement(byId("cat_menu")).isEnabled();
+//        driver.findElement(byId("cat_menu")).isEnabled();
         driver.findElement(byId("cat_menu")).click(); //кликаем кнопку Каталог
 
 //        WebDriverWait wait = new WebDriverWait(driver, 10);  // ждем в течение 10 секунд
