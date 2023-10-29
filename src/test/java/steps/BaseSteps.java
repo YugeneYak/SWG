@@ -19,6 +19,7 @@ public class BaseSteps {
         options.setCapability("acceptInsecureCerts", true);
         options.setCapability("pageLoadStrategy", "eager");
         options.addArguments("--ignore-certificate-errors");
+        options.addArguments("--whitelisted-ips=");
         options.addArguments("window-size="+Properties.getBrowserSize());
         driver = new ChromeDriver(options); // присваиваем значение driver
     }
