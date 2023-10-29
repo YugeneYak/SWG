@@ -12,6 +12,7 @@ import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Properties;
@@ -41,8 +42,11 @@ public class TestsSteps {
 
     @И ("Приняты куки")
     public  void приняты_куки() {
-//        Assert.assertTrue(driver.findElement(byCssSelector(".cookie_button")).isDisplayed());
-        driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
+        Assert.assertTrue(driver.findElement(byCssSelector(".cookie_button")).isDisplayed());
+        Actions actions = new Actions(driver);
+
+        actions.moveToElement(driver.findElement(byCssSelector(".cookie_button"))).click().perform();
+//        driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
 
     }
 
