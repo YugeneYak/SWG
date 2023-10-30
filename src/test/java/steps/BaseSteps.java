@@ -15,11 +15,11 @@ public class BaseSteps {
     public void setupDriver() {
         System.setProperty("webdriver.chrome.driver", "D:\\Users\\yugene\\Documents\\test\\src\\test\\resources\\chromedriver\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
-
+        System.setProperty("webdriver.chrome.whitelistedIps", "");
         options.setCapability("acceptInsecureCerts", true);
         options.setCapability("pageLoadStrategy", "eager");
         options.addArguments("--ignore-certificate-errors");
-        options.addArguments("--whitelisted-ips=");
+//        options.addArguments("--allowed-ips=''");
         options.addArguments("window-size="+Properties.getBrowserSize());
         driver = new ChromeDriver(options); // присваиваем значение driver
     }
