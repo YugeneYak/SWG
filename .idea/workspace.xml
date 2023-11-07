@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protein.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/swg.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -54,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="153">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -454,7 +446,7 @@
       <workItem from="1697978218871" duration="667000" />
       <workItem from="1697979636257" duration="39546000" />
       <workItem from="1699007535894" duration="5684000" />
-      <workItem from="1699345466228" duration="3991000" />
+      <workItem from="1699345466228" duration="4941000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <option name="closed" value="true" />
@@ -790,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699007670261</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Test">
+      <created>1699349530633</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1699349530633</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -826,7 +825,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97911000" />
+    <option name="totallyTimeSpent" value="98861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
@@ -1119,8 +1118,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="153">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
