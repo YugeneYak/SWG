@@ -16,14 +16,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Properties;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.actions;
 
 
 public class TestsSteps {
@@ -31,7 +34,6 @@ public class TestsSteps {
     private WebDriver driver; //добавляем поле driver
 
     @Дано("Открыта страница сайта {string}")
-
     public  void открыта_страница_сайта(String text) {
 
         BaseSteps baseSteps = new BaseSteps();
@@ -106,5 +108,39 @@ public class TestsSteps {
 
             System.out.println("ParentElement HTML=" + nestedElements);
         }
+    }
+
+    @Тогда ("Выбираем раздел {string}")
+    public void выбираем_раздел(String sectionName) {
+        Actions actions = new Actions(driver);
+        WebElement section = driver.findElement(byXpath("//*[contains(text(),'" + sectionName + "')]"));
+        actions.moveToElement(section).build().perform();
+    }
+    @И("Находим фильтры")
+    public  void Находим_фильтры(List<String> menuItems) {
+        WebElement element = driver.findElement(byId("cat_menu_block"));
+        List<WebElement> menuLinks = element.findElements(byClassName("catalog-menu__label"));
+        List<String> notFoundItems = new ArrayList<>();
+
+        for (String menuItem : menuItems) {
+            boolean found = false;
+            for (WebElement menuLink : menuLinks) {
+                if (menuLink.getText().equals(menuItem)) {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                notFoundItems.add(menuItem);
+            }
+        }
+
+        if (notFoundItems.isEmpty()) {
+            Assert.assertTrue("Все пункты меню найдены", true);
+        } else {
+            Assert.fail("Не найдены пункты меню: " + notFoundItems);
+        }
+//            driver.quit();
+
     }
 }
