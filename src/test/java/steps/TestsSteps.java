@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+import cucumber.api.java.Before;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
@@ -31,14 +31,26 @@ import static com.codeborne.selenide.Selenide.actions;
 
 public class TestsSteps {
 
-    private WebDriver driver; //добавляем поле driver
+    private static WebDriver driver; //добавляем поле driver и используем  static, чтобы driver не был переинициализирован
+
+    @Before
+    public void setup() {
+        // Создание экземпляра класса BaseSteps
+        BaseSteps baseSteps = new BaseSteps();
+
+        // Инициализация драйвера
+        baseSteps.setupDriver();
+
+        // Задание значения драйвера
+        driver = baseSteps.getDriver();
+    }
 
     @Дано("Открыта страница сайта {string}")
     public  void открыта_страница_сайта(String text) {
 
-        BaseSteps baseSteps = new BaseSteps();
-        baseSteps.setupDriver(); // Вызов метода setupDriver() из класса BaseSteps
-        driver = baseSteps.getDriver(); // присваиваем driver значение из BaseSteps
+//        BaseSteps baseSteps = new BaseSteps();
+//        baseSteps.setupDriver(); // Вызов метода setupDriver() из класса BaseSteps
+//        driver = baseSteps.getDriver(); // присваиваем driver значение из BaseSteps
         driver.get("http://"+Properties.getBaseUrl()+text);
     }
 
@@ -51,13 +63,9 @@ public class TestsSteps {
 
     @Тогда("Открываем меню каталога")
     public  void Открываем_меню_каталога() {
-//        driver.findElement(byId("cat_menu")).isEnabled();
-//        driver.findElement(byId("cat_menu")).click(); //кликаем кнопку Каталог
+
         driver.findElement(byId("cat_menu")).sendKeys(Keys.RETURN);
-//        WebDriverWait wait = new WebDriverWait(driver, 10);  // ждем в течение 10 секунд
-//        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(byId("cat_menu")));  // ожидаем, пока элемент не станет кликабельным
-//
-//        element.click();  // кликаем кнопку Каталог
+
     }
 
     @И("Находим пункты меню")
