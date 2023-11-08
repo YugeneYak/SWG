@@ -19,13 +19,12 @@ public class BaseSteps {
         options.setCapability("acceptInsecureCerts", true);
         options.setCapability("pageLoadStrategy", "eager");
         options.addArguments("--ignore-certificate-errors");
-        options.addArguments("--no-sandbox");
 //        options.addArguments("--allowed-ips=''");
         options.addArguments("window-size="+Properties.getBrowserSize());
 
 
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        options.addArguments("--headless"); // open Browser headless
+//        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+//        options.addArguments("--headless"); // open Browser headless
 //        options.addArguments("--disable-infobars"); // disabling infobars
 //        options.addArguments("--disable-extensions"); // disabling extensions
 //        options.addArguments("--disable-gpu"); // applicable to windows os only
