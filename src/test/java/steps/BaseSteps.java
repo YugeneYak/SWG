@@ -9,11 +9,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseSteps {
 
-    private static WebDriver driver;
+    private  WebDriver driver;
 
     // задаем параметры открытия браузера
     public void setupDriver() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/");
         ChromeOptions options = new ChromeOptions();
         System.setProperty("webdriver.chrome.whitelistedIps", "");
         options.setCapability("acceptInsecureCerts", true);
