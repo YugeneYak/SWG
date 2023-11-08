@@ -13,15 +13,15 @@ public class BaseSteps {
 
     // задаем параметры открытия браузера
     public void setupDriver() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        System.setProperty("webdriver.chrome.whitelistedIps", "");
-        options.setCapability("acceptInsecureCerts", true);
-        options.setCapability("pageLoadStrategy", "eager");
-        options.addArguments("--ignore-certificate-errors");
-//        options.addArguments("--allowed-ips=''");
-        options.addArguments("window-size="+Properties.getBrowserSize());
-        driver = new ChromeDriver(options); // присваиваем значение driver
+//        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
+//        ChromeOptions options = new ChromeOptions();
+//        System.setProperty("webdriver.chrome.whitelistedIps", "");
+//        options.setCapability("acceptInsecureCerts", true);
+//        options.setCapability("pageLoadStrategy", "eager");
+//        options.addArguments("--ignore-certificate-errors");
+////        options.addArguments("--allowed-ips=''");
+//        options.addArguments("window-size="+Properties.getBrowserSize());
+//        driver = new ChromeDriver(options); // присваиваем значение driver
     }
 
     // метод для получения значения driver
