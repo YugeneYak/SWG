@@ -13,8 +13,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Properties;
@@ -39,16 +37,7 @@ public class TestsSteps {
     public void setup() {
         // Создание экземпляра класса BaseSteps
         BaseSteps baseSteps = new BaseSteps();
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        System.setProperty("webdriver.chrome.whitelistedIps", "");
-        options.setCapability("acceptInsecureCerts", true);
-        options.setCapability("pageLoadStrategy", "eager");
-        options.addArguments("--ignore-certificate-errors");
-//        options.addArguments("--allowed-ips=''");
-        options.addArguments("window-size="+Properties.getBrowserSize());
 
-        driver = new ChromeDriver(options); // присваиваем значение driver
         // Инициализация драйвера
         baseSteps.setupDriver();
 
