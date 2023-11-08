@@ -56,10 +56,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestsSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#3495#3503#0" expanded="true" />
               </folding>
             </state>
@@ -69,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/BaseSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="87" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="87" />
+            <state relative-caret-position="340">
+              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,7 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>class Navigator</find>
       <find>&lt;artifactId&gt;selenide</find>
       <find>selenide</find>
       <find>remoteUrl</find>
@@ -112,6 +110,7 @@
       <find>Выбираем раздел</find>
       <find>slf4j</find>
       <find>clean</find>
+      <find>DevToolsActivePort</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -513,23 +512,7 @@
       <workItem from="1697978218871" duration="667000" />
       <workItem from="1697979636257" duration="39546000" />
       <workItem from="1699007535894" duration="5684000" />
-      <workItem from="1699345466228" duration="19175000" />
-    </task>
-    <task id="LOCAL-00017" summary="Test">
-      <option name="closed" value="true" />
-      <created>1698492485059</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1698492485059</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Test">
-      <option name="closed" value="true" />
-      <created>1698492617756</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1698492617756</updated>
+      <workItem from="1699345466228" duration="21300000" />
     </task>
     <task id="LOCAL-00019" summary="Test">
       <option name="closed" value="true" />
@@ -882,7 +865,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699445995876</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Test">
+      <created>1699450034910</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1699450034910</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Test">
+      <created>1699454967504</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1699454967504</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -918,7 +915,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113095000" />
+    <option name="totallyTimeSpent" value="115220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
@@ -1196,10 +1193,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestsSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#3495#3503#0" expanded="true" />
           </folding>
         </state>
@@ -1207,8 +1203,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/BaseSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="87" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="87" />
+        <state relative-caret-position="340">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

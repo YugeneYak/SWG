@@ -22,6 +22,15 @@ public class BaseSteps {
         options.addArguments("--no-sandbox");
 //        options.addArguments("--allowed-ips=''");
         options.addArguments("window-size="+Properties.getBrowserSize());
+
+
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+//        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--no-sandbox"); // Bypass OS security model
+
         driver = new ChromeDriver(options); // присваиваем значение driver
     }
 
