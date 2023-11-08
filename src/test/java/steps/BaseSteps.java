@@ -20,15 +20,15 @@ public class BaseSteps {
         options.setCapability("pageLoadStrategy", "eager");
         options.addArguments("--ignore-certificate-errors");
 //        options.addArguments("--allowed-ips=''");
-        options.addArguments("window-size="+Properties.getBrowserSize());
+//        options.addArguments("window-size="+Properties.getBrowserSize());
 
 
-//        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //        options.addArguments("--headless"); // open Browser headless
 //        options.addArguments("--disable-infobars"); // disabling infobars
 //        options.addArguments("--disable-extensions"); // disabling extensions
 //        options.addArguments("--disable-gpu"); // applicable to windows os only
-//        options.addArguments("--no-sandbox"); // Bypass OS security model
+        options.addArguments("--no-sandbox"); // Bypass OS security model
 
         driver = new ChromeDriver(options); // присваиваем значение driver
     }
