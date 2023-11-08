@@ -13,7 +13,7 @@ public class BaseSteps {
 
     // задаем параметры открытия браузера
     public void setupDriver() {
-        System.setProperty("webdriver.chrome.driver", "D:\\Users\\yugene\\Documents\\test\\src\\test\\resources\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "\\test\\resources\\chromedriver\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         System.setProperty("webdriver.chrome.whitelistedIps", "");
         options.setCapability("acceptInsecureCerts", true);
