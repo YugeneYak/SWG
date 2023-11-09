@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.openqa.selenium.chrome.ChromeOptions;
-
+import java.util.Collections;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 import java.nio.file.Files;
@@ -29,27 +29,44 @@ public class BaseSteps {
     public void setupDriver() {
 
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-//        options.addArguments("--no-sandbox"); // Bypass OS security model
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        options.addArguments("--disable-extensions"); // disabling extensions
-        options.addArguments("--disable-gpu"); // applicable to windows os only
-//        System.setProperty("webdriver.chrome.whitelistedIps", "");
-//        options.setCapability("acceptInsecureCerts", true);
-//        options.setCapability("pageLoadStrategy", "eager");
-//        options.addArguments("--ignore-certificate-errors");
-//        options.addArguments("--allowed-ips=''");
-//        options.addArguments("window-size="+Properties.getBrowserSize());
-        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
-//        options.addArguments("--remote-debugging-pipe");
-//        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
-//
-//        options.addArguments("--headless"); // open Browser headless
-//        options.addArguments("--disable-infobars"); // disabling infobars
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless");
+////        options.addArguments("--no-sandbox"); // Bypass OS security model
+//        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //        options.addArguments("--disable-extensions"); // disabling extensions
 //        options.addArguments("--disable-gpu"); // applicable to windows os only
-
+////        System.setProperty("webdriver.chrome.whitelistedIps", "");
+////        options.setCapability("acceptInsecureCerts", true);
+////        options.setCapability("pageLoadStrategy", "eager");
+////        options.addArguments("--ignore-certificate-errors");
+////        options.addArguments("--allowed-ips=''");
+////        options.addArguments("window-size="+Properties.getBrowserSize());
+//        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
+////        options.addArguments("--remote-debugging-pipe");
+////        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
+////
+////        options.addArguments("--headless"); // open Browser headless
+////        options.addArguments("--disable-infobars"); // disabling infobars
+////        options.addArguments("--disable-extensions"); // disabling extensions
+////        options.addArguments("--disable-gpu"); // applicable to windows os only
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--headless");
+        options.addArguments("--disable-browser-side-navigation");
+        options.addArguments("--disable-infobars");
+        options.addArguments("--disable-features=VizDisplayCompositor");
+        options.addArguments("--disable-features=VizHitTestSurfaceLayer");
+        options.addArguments("--disable-features=IgnoreGpuBlacklist");
+        options.addArguments("--window-size=1920,1080");
+        options.addArguments("--disable-notifications");
+        options.addArguments("--disable-popup-blocking");
+        options.addArguments("--proxy-server='direct://'");
+        options.addArguments("--proxy-bypass-list=*");
+        options.addArguments("--dns-prefetch-disable");
 
         System.out.println("000000");
 //        try {
