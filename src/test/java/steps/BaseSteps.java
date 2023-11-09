@@ -10,17 +10,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.logging.Logger;
 import java.util.logging.Level;
-
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.attribute.UserPrincipal;
 import static com.codeborne.selenide.Configuration.*;
 public class BaseSteps {
     private static final Logger LOGGER = Logger.getLogger(Hooks.class.getName());
-
-
-
-
-
-
-
 
 //            try {
 //            remote = getRemoteUrl();
@@ -32,7 +27,22 @@ public class BaseSteps {
 
     // задаем параметры открытия браузера
     public void setupDriver() {
+
+        String currentUser = System.getProperty("user.name");
+        System.out.println("Текущий пользователь: " + currentUser);
+
+//        try {
+//            Path path = Path.of(".");
+//            UserPrincipal owner = Files.getOwner(path);
+//            String ownerName = owner.getName();
+//            System.out.println("Владелец: " + ownerName);
 //
+//            boolean isRootUser = ownerName.equals("root");
+//            System.out.println("Проверка, что это не root пользователь: " + !isRootUser);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
 //        try {
 //            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
 //            ChromeOptions chromeOptions = new ChromeOptions();
