@@ -53,18 +53,18 @@ public class BaseSteps {
         options.addArguments("--no-sandbox"); // Bypass OS security model
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
-        options.setCapability("acceptInsecureCerts", true);
-        options.setCapability("pageLoadStrategy", "eager");
-        options.addArguments("--ignore-certificate-errors");
+//        options.setCapability("acceptInsecureCerts", true);
+//        options.setCapability("pageLoadStrategy", "eager");
+//        options.addArguments("--ignore-certificate-errors");
 //        options.addArguments("--allowed-ips=''");
 //        options.addArguments("window-size="+Properties.getBrowserSize());
         System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
-        options.addArguments("--remote-debugging-pipe");
-        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
-
-        options.addArguments("--headless"); // open Browser headless
-        options.addArguments("--disable-infobars"); // disabling infobars
-        options.addArguments("--disable-extensions"); // disabling extensions
+//        options.addArguments("--remote-debugging-pipe");
+//        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
+//
+//        options.addArguments("--headless"); // open Browser headless
+//        options.addArguments("--disable-infobars"); // disabling infobars
+//        options.addArguments("--disable-extensions"); // disabling extensions
 //        options.addArguments("--disable-gpu"); // applicable to windows os only
 
         System.out.println("000000");
