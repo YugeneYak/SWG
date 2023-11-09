@@ -22,7 +22,7 @@ public class BaseSteps {
 //        options.addArguments("--allowed-ips=''");
 //        options.addArguments("window-size="+Properties.getBrowserSize());
 
-
+        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--headless"); // open Browser headless
         options.addArguments("--disable-infobars"); // disabling infobars
