@@ -67,12 +67,10 @@ public class BaseSteps {
         options.addArguments("--disable-extensions"); // disabling extensions
 //        options.addArguments("--disable-gpu"); // applicable to windows os only
 
-
+        System.out.println("000000");
 //        try {
             driver = new ChromeDriver(options); // присваиваем значение driver
-        driver.get("http://www.google.com");
-        System.out.println("44444444444");
-        driver.close();
+        System.out.println("1111111");
 //        }catch (RuntimeException e) {
 //            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
 //            System.out.println("trass11=====================");
@@ -85,7 +83,9 @@ public class BaseSteps {
 
     // метод для получения значения driver
     public WebDriver getDriver() {
+        System.out.println("222222");
         return driver;
+
     }
 
 }
