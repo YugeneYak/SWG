@@ -52,6 +52,7 @@ public class BaseSteps {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox"); // Bypass OS security model
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--headless");
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
 //        options.setCapability("acceptInsecureCerts", true);
 //        options.setCapability("pageLoadStrategy", "eager");
