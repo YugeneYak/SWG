@@ -28,21 +28,6 @@ public class BaseSteps {
     // задаем параметры открытия браузера
     public void setupDriver() {
 
-        String currentUser = System.getProperty("user.name");
-        System.out.println("Текущий пользователь: " + currentUser);
-
-//        try {
-//            Path path = Path.of(".");
-//            UserPrincipal owner = Files.getOwner(path);
-//            String ownerName = owner.getName();
-//            System.out.println("Владелец: " + ownerName);
-//
-//            boolean isRootUser = ownerName.equals("root");
-//            System.out.println("Проверка, что это не root пользователь: " + !isRootUser);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
 //        try {
 //            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
 //            ChromeOptions chromeOptions = new ChromeOptions();
@@ -77,7 +62,9 @@ public class BaseSteps {
 //        options.addArguments("--disable-infobars"); // disabling infobars
 //        options.addArguments("--disable-extensions"); // disabling extensions
 //        options.addArguments("--disable-gpu"); // applicable to windows os only
+        String chromedriverPath = System.getProperty("chromedriverpath");
 
+        System.out.println("999999" + chromedriverPath);
         System.out.println("000000");
 //        try {
             driver = new ChromeDriver(options); // присваиваем значение driver
