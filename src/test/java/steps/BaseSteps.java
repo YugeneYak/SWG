@@ -16,7 +16,7 @@ public class BaseSteps {
     private static final Logger LOGGER = Logger.getLogger(Hooks.class.getName());
     public static void main(String[] args) {
         try {
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromium-browser");
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--no-sandbox");
@@ -24,7 +24,8 @@ public class BaseSteps {
             WebDriver d = new ChromeDriver(chromeOptions);
             d.get("https://www.google.nl/");
         }catch (RuntimeException e) {
-            LOGGER.log(Level.SEVERE, e.toString(), e);
+            System.out.println(e.toString());
+            e.printStackTrace();
         }
 
 
