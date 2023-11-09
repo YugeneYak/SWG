@@ -51,6 +51,7 @@ public class BaseSteps {
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox"); // Bypass OS security model
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
         options.setCapability("acceptInsecureCerts", true);
         options.setCapability("pageLoadStrategy", "eager");
@@ -60,7 +61,7 @@ public class BaseSteps {
         System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
         options.addArguments("--remote-debugging-pipe");
         options.addArguments("--enable-logging --v=1"); // Bypass OS security model
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+
         options.addArguments("--headless"); // open Browser headless
         options.addArguments("--disable-infobars"); // disabling infobars
         options.addArguments("--disable-extensions"); // disabling extensions
