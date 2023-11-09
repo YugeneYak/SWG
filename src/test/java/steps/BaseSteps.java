@@ -14,25 +14,14 @@ import java.util.logging.Level;
 import static com.codeborne.selenide.Configuration.*;
 public class BaseSteps {
     private static final Logger LOGGER = Logger.getLogger(Hooks.class.getName());
-    public static void main(String[] args) {
-        try {
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("--headless");
-            chromeOptions.addArguments("--no-sandbox");
-            chromeOptions.addArguments("--disable-dev-shm-usage");
-            WebDriver d = new ChromeDriver(chromeOptions);
-            d.get("https://www.google.nl/");
-        }catch (RuntimeException e) {
-            System.out.println(e.toString());
-            e.printStackTrace();
-        }
 
 
 
 
 
-    }
+
+
+
 //            try {
 //            remote = getRemoteUrl();
 //        } catch (RuntimeException e) {
@@ -43,6 +32,20 @@ public class BaseSteps {
 
     // задаем параметры открытия браузера
     public void setupDriver() {
+
+        try {
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("--no-sandbox");
+            chromeOptions.addArguments("--disable-dev-shm-usage");
+            WebDriver d = new ChromeDriver(chromeOptions);
+            d.get("https://www.google.nl/");
+        }catch (RuntimeException e) {
+            System.out.println("ошибки+" + e.toString());
+            e.printStackTrace();
+        }
+
 //        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromium-browser");
         ChromeOptions options = new ChromeOptions();
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
