@@ -32,23 +32,23 @@ public class BaseSteps {
 
     // задаем параметры открытия браузера
     public void setupDriver() {
+//
+//        try {
+//            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
+//            ChromeOptions chromeOptions = new ChromeOptions();
+//            chromeOptions.addArguments("--headless");
+//            chromeOptions.addArguments("--no-sandbox");
+//            chromeOptions.addArguments("--disable-dev-shm-usage");
+//            WebDriver d = new ChromeDriver(chromeOptions);
+//            d.get("https://www.google.nl/");
+//        }catch (RuntimeException e) {
+//            System.out.println("ошибки=" + e.toString() + "=ошибки");
+//            System.out.println("trass=====================");
+//            e.printStackTrace();
+//            System.out.println("====================trass");
+//        }
 
-        try {
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("--headless");
-            chromeOptions.addArguments("--no-sandbox");
-            chromeOptions.addArguments("--disable-dev-shm-usage");
-            WebDriver d = new ChromeDriver(chromeOptions);
-            d.get("https://www.google.nl/"); 
-        }catch (RuntimeException e) {
-            System.out.println("ошибки=" + e.toString() + "=ошибки");
-            System.out.println("trass=====================");
-            e.printStackTrace();
-            System.out.println("====================trass");
-        }
-
-//        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromium-browser");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
         ChromeOptions options = new ChromeOptions();
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
         options.setCapability("acceptInsecureCerts", true);
