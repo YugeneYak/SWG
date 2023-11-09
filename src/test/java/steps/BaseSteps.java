@@ -67,6 +67,7 @@ public class BaseSteps {
         options.addArguments("--proxy-server='direct://'");
         options.addArguments("--proxy-bypass-list=*");
         options.addArguments("--dns-prefetch-disable");
+        options.addArguments("--remote-debugging-port=9222");
 
         System.out.println("000000");
 //        try {
