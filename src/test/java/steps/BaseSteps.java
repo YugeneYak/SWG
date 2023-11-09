@@ -56,7 +56,7 @@ public class BaseSteps {
         options.addArguments("--ignore-certificate-errors");
 //        options.addArguments("--allowed-ips=''");
 //        options.addArguments("window-size="+Properties.getBrowserSize());
-
+        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
         options.addArguments("--enable-logging --v=1"); // Bypass OS security model
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--headless"); // open Browser headless
