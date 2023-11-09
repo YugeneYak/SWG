@@ -50,6 +50,7 @@ public class BaseSteps {
 
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox"); // Bypass OS security model
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
         options.setCapability("acceptInsecureCerts", true);
         options.setCapability("pageLoadStrategy", "eager");
@@ -64,7 +65,7 @@ public class BaseSteps {
         options.addArguments("--disable-infobars"); // disabling infobars
         options.addArguments("--disable-extensions"); // disabling extensions
 //        options.addArguments("--disable-gpu"); // applicable to windows os only
-        options.addArguments("--no-sandbox"); // Bypass OS security model
+
 
 //        try {
             driver = new ChromeDriver(options); // присваиваем значение driver
