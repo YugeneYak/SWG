@@ -42,8 +42,10 @@ public class BaseSteps {
             WebDriver d = new ChromeDriver(chromeOptions);
             d.get("https://www.google.nl/");
         }catch (RuntimeException e) {
-            System.out.println("ошибки+" + e.toString());
+            System.out.println("ошибки=" + e.toString());
+            System.out.println("trass=====================");
             e.printStackTrace();
+            System.out.println("====================trass");
         }
 
 //        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromium-browser");
