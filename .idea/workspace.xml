@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestsSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="-136">
+              <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
               <folding>
                 <element signature="e#3495#3503#0" expanded="true" />
               </folding>
@@ -68,10 +68,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/BaseSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            <state relative-caret-position="391">
+              <caret line="33" selection-start-line="33" selection-start-column="2" selection-end-line="37" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1933#1934#0" expanded="true" />
+                <element signature="e#1962#1963#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -512,21 +514,7 @@
       <workItem from="1697978218871" duration="667000" />
       <workItem from="1697979636257" duration="39546000" />
       <workItem from="1699007535894" duration="5684000" />
-      <workItem from="1699345466228" duration="29632000" />
-    </task>
-    <task id="LOCAL-00044" summary="Test">
-      <created>1699351134238</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1699351134238</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Test">
-      <created>1699351238898</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1699351238898</updated>
+      <workItem from="1699345466228" duration="30940000" />
     </task>
     <task id="LOCAL-00046" summary="Test">
       <created>1699351398082</created>
@@ -857,7 +845,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699513084360</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Test">
+      <created>1699513193632</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1699513193632</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Test">
+      <created>1699514938390</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1699514938390</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -893,7 +895,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123552000" />
+    <option name="totallyTimeSpent" value="124860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
@@ -905,7 +907,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.19402985" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.19402985" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -915,7 +917,7 @@
       <window_info anchor="bottom" id="Build" order="5" weight="0.3292683" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.35365853" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.35365853" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.29268292" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -1171,8 +1173,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestsSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="-136">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
           <folding>
             <element signature="e#3495#3503#0" expanded="true" />
           </folding>
@@ -1181,10 +1183,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/BaseSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        <state relative-caret-position="391">
+          <caret line="33" selection-start-line="33" selection-start-column="2" selection-end-line="37" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#1962#1963#0" expanded="true" />
           </folding>
         </state>
       </provider>
