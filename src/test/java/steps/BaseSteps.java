@@ -34,13 +34,13 @@ public class BaseSteps {
     public void setupDriver() {
 
         try {
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--no-sandbox");
             chromeOptions.addArguments("--disable-dev-shm-usage");
             WebDriver d = new ChromeDriver(chromeOptions);
-            d.get("https://www.google.nl/");
+            d.get("https://www.google.nl/"); 
         }catch (RuntimeException e) {
             System.out.println("ошибки=" + e.toString() + "=ошибки");
             System.out.println("trass=====================");
