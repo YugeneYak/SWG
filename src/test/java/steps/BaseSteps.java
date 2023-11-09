@@ -50,8 +50,6 @@ public class BaseSteps {
 
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        options.setExperimentalOption("excludeSwitches", "enable-automation");
-        options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--no-sandbox"); // Bypass OS security model
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
@@ -72,6 +70,9 @@ public class BaseSteps {
 
 //        try {
             driver = new ChromeDriver(options); // присваиваем значение driver
+        driver.get("http://www.google.com");
+        System.out.println("44444444444");
+        driver.close();
 //        }catch (RuntimeException e) {
 //            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
 //            System.out.println("trass11=====================");
