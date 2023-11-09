@@ -512,21 +512,7 @@
       <workItem from="1697978218871" duration="667000" />
       <workItem from="1697979636257" duration="39546000" />
       <workItem from="1699007535894" duration="5684000" />
-      <workItem from="1699345466228" duration="28836000" />
-    </task>
-    <task id="LOCAL-00042" summary="Test">
-      <created>1699007670261</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1699007670261</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Test">
-      <created>1699349530633</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1699349530633</updated>
+      <workItem from="1699345466228" duration="29632000" />
     </task>
     <task id="LOCAL-00044" summary="Test">
       <created>1699351134238</created>
@@ -857,7 +843,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699511342580</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Test">
+      <created>1699512389965</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1699512389965</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Test">
+      <created>1699513084360</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1699513084360</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -893,7 +893,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122756000" />
+    <option name="totallyTimeSpent" value="123552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
