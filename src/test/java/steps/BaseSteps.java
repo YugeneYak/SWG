@@ -65,14 +65,14 @@ public class BaseSteps {
         options.addArguments("--disable-gpu"); // applicable to windows os only
         options.addArguments("--no-sandbox"); // Bypass OS security model
 
-        try {
+//        try {
             driver = new ChromeDriver(options); // присваиваем значение driver
-        }catch (RuntimeException e) {
-            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
-            System.out.println("trass11=====================");
-            e.printStackTrace();
-            System.out.println("====================11trass");
-        }
+//        }catch (RuntimeException e) {
+//            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
+//            System.out.println("trass11=====================");
+//            e.printStackTrace();
+//            System.out.println("====================11trass");
+//        }
 
 //        driver = new ChromeDriver(options); // присваиваем значение driver
     }
