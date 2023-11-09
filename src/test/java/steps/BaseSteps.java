@@ -48,7 +48,7 @@ public class BaseSteps {
 //            System.out.println("====================trass");
 //        }
 
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/cromedriver");
         ChromeOptions options = new ChromeOptions();
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
         options.setCapability("acceptInsecureCerts", true);
