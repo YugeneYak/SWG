@@ -9,33 +9,43 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseSteps {
 
-    private  WebDriver driver;
-
-    // задаем параметры открытия браузера
-    public void setupDriver() {
-//        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromium-browser");
-        ChromeOptions options = new ChromeOptions();
-//        System.setProperty("webdriver.chrome.whitelistedIps", "");
-        options.setCapability("acceptInsecureCerts", true);
-        options.setCapability("pageLoadStrategy", "eager");
-        options.addArguments("--ignore-certificate-errors");
-//        options.addArguments("--allowed-ips=''");
-//        options.addArguments("window-size="+Properties.getBrowserSize());
-
-        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        options.addArguments("--headless"); // open Browser headless
-        options.addArguments("--disable-infobars"); // disabling infobars
-        options.addArguments("--disable-extensions"); // disabling extensions
-        options.addArguments("--disable-gpu"); // applicable to windows os only
-        options.addArguments("--no-sandbox"); // Bypass OS security model
-
-        driver = new ChromeDriver(options); // присваиваем значение driver
+    public static void main(String[] args) {
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+        WebDriver d = new ChromeDriver(chromeOptions);
+        d.get("https://www.google.nl/");
     }
 
-    // метод для получения значения driver
-    public WebDriver getDriver() {
-        return driver;
-    }
+
+//    private  WebDriver driver;
+//
+//    // задаем параметры открытия браузера
+//    public void setupDriver() {
+////        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromium-browser");
+//        ChromeOptions options = new ChromeOptions();
+////        System.setProperty("webdriver.chrome.whitelistedIps", "");
+//        options.setCapability("acceptInsecureCerts", true);
+//        options.setCapability("pageLoadStrategy", "eager");
+//        options.addArguments("--ignore-certificate-errors");
+////        options.addArguments("--allowed-ips=''");
+////        options.addArguments("window-size="+Properties.getBrowserSize());
+//
+//        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
+//        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+//        options.addArguments("--headless"); // open Browser headless
+//        options.addArguments("--disable-infobars"); // disabling infobars
+//        options.addArguments("--disable-extensions"); // disabling extensions
+//        options.addArguments("--disable-gpu"); // applicable to windows os only
+//        options.addArguments("--no-sandbox"); // Bypass OS security model
+//
+//        driver = new ChromeDriver(options); // присваиваем значение driver
+//    }
+//
+//    // метод для получения значения driver
+//    public WebDriver getDriver() {
+//        return driver;
+//    }
 
 }
