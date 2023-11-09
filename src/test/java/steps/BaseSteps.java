@@ -42,7 +42,7 @@ public class BaseSteps {
             WebDriver d = new ChromeDriver(chromeOptions);
             d.get("https://www.google.nl/");
         }catch (RuntimeException e) {
-            System.out.println("ошибки=" + e.toString());
+            System.out.println("ошибки=" + e.toString() + "=ошибки");
             System.out.println("trass=====================");
             e.printStackTrace();
             System.out.println("====================trass");
