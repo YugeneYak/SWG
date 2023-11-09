@@ -16,6 +16,7 @@ public class BaseSteps {
     private static final Logger LOGGER = Logger.getLogger(Hooks.class.getName());
     public static void main(String[] args) {
         try {
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromium-browser");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--no-sandbox");
