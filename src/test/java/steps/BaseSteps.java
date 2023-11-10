@@ -93,10 +93,10 @@ public class BaseSteps {
     }
 
     // метод для получения значения driver
-//    public WebDriver getDriver() {
-//        System.out.println("222222");
-//        return driver;
-//
-//    }
+    public WebDriver getDriver() {
+        System.out.println("222222");
+        return driver;
+
+    }
 
 }
