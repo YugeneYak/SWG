@@ -53,7 +53,7 @@ public class BaseSteps {
 
         ChromeOptions options = new ChromeOptions();
 
-//        options.setBinary("/root/chrome/linux-114.0.5735.90/chrome-linux64/chrome");
+        options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
