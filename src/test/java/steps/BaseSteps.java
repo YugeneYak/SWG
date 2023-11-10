@@ -29,7 +29,7 @@ public class BaseSteps {
     // задаем параметры открытия браузера
     public void setupDriver() {
 
-        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/root/chrome/linux-114.0.5735.90/chrome-linux64/chrome");
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--headless");
 ////        options.addArguments("--no-sandbox"); // Bypass OS security model
