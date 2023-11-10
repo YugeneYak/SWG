@@ -59,7 +59,7 @@ public class TestsSteps {
     public  void приняты_куки() {
         System.out.println("5555555555");
 //        Assert.assertTrue(driver.findElement(byCssSelector(".cookie_button")).isDisplayed());
-        driver.findElement(byCssSelector(".cookie_button1")).click(); //кликаем кнопку
+        driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
         System.out.println("666666666");
     }
 
