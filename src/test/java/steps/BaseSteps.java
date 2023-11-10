@@ -43,7 +43,6 @@ public class BaseSteps {
 ////        options.addArguments("--allowed-ips=''");
 ////        options.addArguments("window-size="+Properties.getBrowserSize());
         System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
-//        options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
 ////        options.addArguments("--remote-debugging-pipe");
 ////        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
 ////
@@ -54,7 +53,7 @@ public class BaseSteps {
 
         ChromeOptions options = new ChromeOptions();
 
-
+        options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/");
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
