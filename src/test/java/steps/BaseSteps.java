@@ -76,7 +76,14 @@ public class BaseSteps {
         System.out.println("000000");
 
         System.out.println("9999999");
+        try {
         open("https://yandex.ru");
+                    }catch (RuntimeException e) {
+            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
+            System.out.println("trass11=====================");
+            e.printStackTrace();
+            System.out.println("====================11trass");
+        }
         System.out.println("888888");
 
 //        try {
