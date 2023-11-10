@@ -76,21 +76,21 @@ public class BaseSteps {
 //        options.addArguments("--dns-prefetch-disable");
 //        options.addArguments("--remote-debugging-port=9222");
 
-        System.out.println("9999999");
-        try {
-        open("https://yandex.ru");
-                    }catch (RuntimeException e) {
-            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
-            System.out.println("trass11=====================");
-            e.printStackTrace();
-            System.out.println("====================11trass");
-        }
-        System.out.println("888888");
-
+//        System.out.println("9999999");
 //        try {
-//            driver = new ChromeDriver(options); // присваиваем значение driver
-
-        System.out.println("1111111");
+//        open("https://yandex.ru");
+//                    }catch (RuntimeException e) {
+//            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
+//            System.out.println("trass11=====================");
+//            e.printStackTrace();
+//            System.out.println("====================11trass");
+//        }
+//        System.out.println("888888");
+//
+////        try {
+////            driver = new ChromeDriver(options); // присваиваем значение driver
+//
+//        System.out.println("1111111");
 //        }catch (RuntimeException e) {
 //            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
 //            System.out.println("trass11=====================");
