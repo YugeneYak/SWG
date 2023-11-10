@@ -14,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.UserPrincipal;
 import static com.codeborne.selenide.Configuration.*;
+import static com.codeborne.selenide.Selenide.*;
 public class BaseSteps {
     private static final Logger LOGGER = Logger.getLogger(Hooks.class.getName());
 
@@ -28,6 +29,9 @@ public class BaseSteps {
     // задаем параметры открытия браузера
     public void setupDriver() {
 
+        System.out.println("-------");
+        open("https://yandex.ru");
+        System.out.println("==========");
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--headless");
@@ -49,6 +53,7 @@ public class BaseSteps {
 ////        options.addArguments("--disable-infobars"); // disabling infobars
 ////        options.addArguments("--disable-extensions"); // disabling extensions
 ////        options.addArguments("--disable-gpu"); // applicable to windows os only
+
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         options.addArguments("--no-sandbox");
