@@ -30,6 +30,7 @@ public class BaseSteps {
     public void setupDriver() {
 
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
+        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--headless");
 ////        options.addArguments("--no-sandbox"); // Bypass OS security model
@@ -42,7 +43,7 @@ public class BaseSteps {
 ////        options.addArguments("--ignore-certificate-errors");
 ////        options.addArguments("--allowed-ips=''");
 ////        options.addArguments("window-size="+Properties.getBrowserSize());
-        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
+
 ////        options.addArguments("--remote-debugging-pipe");
 ////        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
 ////
@@ -53,7 +54,7 @@ public class BaseSteps {
 
         ChromeOptions options = new ChromeOptions();
 
-        options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
+//        options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");

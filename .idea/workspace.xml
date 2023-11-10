@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/BaseSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="82" column="63" lean-forward="true" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+            <state relative-caret-position="510">
+              <caret line="57" column="76" lean-forward="true" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,7 +82,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>remoteUrl</find>
       <find>browser</find>
       <find>webdriver.Chrome</find>
       <find>--disable</find>
@@ -112,6 +111,7 @@
       <find>slf4j</find>
       <find>org.slf4j.impl.StaticLoggerBinder</find>
       <find>selenide</find>
+      <find>Selenide</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,12 +147,12 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/Properties.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/check_low_emission_filter.feature" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" />
         <option value="$PROJECT_DIR$/.allure/allure-2.8.1/bin/allure.bat" />
         <option value="$PROJECT_DIR$/.allure/allure-2.8.1/bin/allure" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" />
+        <option value="$PROJECT_DIR$/src/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/steps/BaseSteps.java" />
       </list>
     </option>
@@ -516,21 +516,7 @@
       <workItem from="1697978218871" duration="667000" />
       <workItem from="1697979636257" duration="39546000" />
       <workItem from="1699007535894" duration="5684000" />
-      <workItem from="1699345466228" duration="57942000" />
-    </task>
-    <task id="LOCAL-00104" summary="Test">
-      <created>1699521585512</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1699521585512</updated>
-    </task>
-    <task id="LOCAL-00105" summary="Test">
-      <created>1699523593468</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1699523593468</updated>
+      <workItem from="1699345466228" duration="59738000" />
     </task>
     <task id="LOCAL-00106" summary="Test">
       <created>1699523711072</created>
@@ -861,7 +847,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699606085396</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="Test">
+      <created>1699606368035</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1699606368035</updated>
+    </task>
+    <task id="LOCAL-00154" summary="Test">
+      <created>1699607512791</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1699607512791</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -897,7 +897,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151862000" />
+    <option name="totallyTimeSpent" value="153658000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
@@ -919,12 +928,12 @@
       <window_info anchor="bottom" id="Build" order="5" weight="0.3292683" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.35365853" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.35365853" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.29268292" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.31374723" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.31374723" />
       <window_info anchor="right" id="Coverage" sideWeight="0.50085765" side_tool="true" weight="0.19829424" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -984,20 +993,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/CartRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/test/java/RunnerTest.java" />
     <entry file="jrt://C:/Program Files/Java/jdk-11.0.2!/java.base/java/lang/Thread.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/codeborne/selenide/5.2.2/selenide-5.2.2-sources.jar!/com/codeborne/selenide/SelenideDriver.java" />
@@ -1129,13 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assertion/AssertCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RunnerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1143,13 +1131,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1227,10 +1208,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assertion/AssertCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/basket/Success.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/validator/FieldsValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="127" column="55" selection-start-line="127" selection-start-column="55" selection-end-line="127" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/BaseSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="82" column="63" lean-forward="true" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+        <state relative-caret-position="510">
+          <caret line="57" column="76" lean-forward="true" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
