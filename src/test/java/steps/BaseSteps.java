@@ -29,9 +29,9 @@ public class BaseSteps {
     // задаем параметры открытия браузера
     public void setupDriver() {
 
-        System.out.println("-------");
+        System.out.println("9999999");
         open("https://yandex.ru");
-        System.out.println("==========");
+        System.out.println("888888");
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--headless");
