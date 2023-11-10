@@ -53,6 +53,8 @@ public class BaseSteps {
 ////        options.addArguments("--disable-gpu"); // applicable to windows os only
 
         ChromeOptions options = new ChromeOptions();
+
+        options.setBinary("/root/chrome/linux-114.0.5735.90/chrome-linux64/chrome");
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
