@@ -43,7 +43,7 @@ public class BaseSteps {
 ////        options.addArguments("--ignore-certificate-errors");
 ////        options.addArguments("--allowed-ips=''");
 ////        options.addArguments("window-size="+Properties.getBrowserSize());
-//        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
+        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
 ////        options.addArguments("--remote-debugging-pipe");
 ////        options.addArguments("--enable-logging --v=1"); // Bypass OS security model
 ////
