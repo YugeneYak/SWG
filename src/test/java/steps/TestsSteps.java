@@ -52,15 +52,15 @@ public class TestsSteps {
 //        baseSteps.setupDriver(); // Вызов метода setupDriver() из класса BaseSteps
 //        driver = baseSteps.getDriver(); // присваиваем driver значение из BaseSteps
         driver.get("http://"+Properties.getBaseUrl()+text);
-        System.out.println("444444444");
+
     }
 
     @И ("Приняты куки")
     public  void приняты_куки() {
-        System.out.println("5555555555");
+
 //        Assert.assertTrue(driver.findElement(byCssSelector(".cookie_button")).isDisplayed());
         driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
-        System.out.println("666666666");
+
     }
 
     @Тогда("Открываем меню каталога")
