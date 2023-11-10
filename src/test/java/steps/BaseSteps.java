@@ -29,9 +29,7 @@ public class BaseSteps {
     // задаем параметры открытия браузера
     public void setupDriver() {
 
-        System.out.println("9999999");
-        open("https://yandex.ru");
-        System.out.println("888888");
+
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--headless");
@@ -75,8 +73,14 @@ public class BaseSteps {
         options.addArguments("--remote-debugging-port=9222");
 
         System.out.println("000000");
+
+        System.out.println("9999999");
+        open("https://yandex.ru");
+        System.out.println("888888");
+
 //        try {
             driver = new ChromeDriver(options); // присваиваем значение driver
+
         System.out.println("1111111");
 //        }catch (RuntimeException e) {
 //            System.out.println("ошибки11=" + e.toString() + "=11ошибки");
