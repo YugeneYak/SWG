@@ -31,10 +31,10 @@ public class BaseSteps {
 
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
         System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
-////        options.addArguments("--no-sandbox"); // Bypass OS security model
-//        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox"); // Bypass OS security model
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //        options.addArguments("--disable-extensions"); // disabling extensions
 //        options.addArguments("--disable-gpu"); // applicable to windows os only
 ////        System.setProperty("webdriver.chrome.whitelistedIps", "");
@@ -49,32 +49,29 @@ public class BaseSteps {
 ////
 ////        options.addArguments("--headless"); // open Browser headless
 ////        options.addArguments("--disable-infobars"); // disabling infobars
-////        options.addArguments("--disable-extensions"); // disabling extensions
 ////        options.addArguments("--disable-gpu"); // applicable to windows os only
 
-        ChromeOptions options = new ChromeOptions();
+//        ChromeOptions options = new ChromeOptions();
 
 //        options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
-        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-extensions");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--headless");
-        options.addArguments("--disable-browser-side-navigation");
-        options.addArguments("--disable-infobars");
-        options.addArguments("--disable-features=VizDisplayCompositor");
-        options.addArguments("--disable-features=VizHitTestSurfaceLayer");
-        options.addArguments("--disable-features=IgnoreGpuBlacklist");
-        options.addArguments("--window-size=1920,1080");
-        options.addArguments("--disable-notifications");
-        options.addArguments("--disable-popup-blocking");
-        options.addArguments("--proxy-server='direct://'");
-        options.addArguments("--proxy-bypass-list=*");
-        options.addArguments("--dns-prefetch-disable");
-        options.addArguments("--remote-debugging-port=9222");
-
-        System.out.println("000000");
+//        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+//        options.addArguments("--no-sandbox");
+//        options.addArguments("--disable-dev-shm-usage");
+//        options.addArguments("--disable-extensions");
+//        options.addArguments("--disable-gpu");
+//        options.addArguments("--headless");
+//        options.addArguments("--disable-browser-side-navigation");
+//        options.addArguments("--disable-infobars");
+//        options.addArguments("--disable-features=VizDisplayCompositor");
+//        options.addArguments("--disable-features=VizHitTestSurfaceLayer");
+//        options.addArguments("--disable-features=IgnoreGpuBlacklist");
+//        options.addArguments("--window-size=1920,1080");
+//        options.addArguments("--disable-notifications");
+//        options.addArguments("--disable-popup-blocking");
+//        options.addArguments("--proxy-server='direct://'");
+//        options.addArguments("--proxy-bypass-list=*");
+//        options.addArguments("--dns-prefetch-disable");
+//        options.addArguments("--remote-debugging-port=9222");
 
         System.out.println("9999999");
         try {
@@ -98,7 +95,7 @@ public class BaseSteps {
 //            System.out.println("====================11trass");
 //        }
 
-//        driver = new ChromeDriver(options); // присваиваем значение driver
+        driver = new ChromeDriver(options); // присваиваем значение driver
     }
 
     // метод для получения значения driver
