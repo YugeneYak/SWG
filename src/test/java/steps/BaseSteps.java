@@ -31,7 +31,9 @@ public class BaseSteps {
 
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
         System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
+
         ChromeOptions options = new ChromeOptions();
+        options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
         options.addArguments("--no-sandbox"); // Bypass OS security model
         options.addArguments("--headless");
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
