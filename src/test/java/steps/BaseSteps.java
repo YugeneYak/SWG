@@ -79,7 +79,7 @@ public class BaseSteps {
         System.out.println("888888");
 
 //        try {
-            driver = new ChromeDriver(options); // присваиваем значение driver
+//            driver = new ChromeDriver(options); // присваиваем значение driver
 
         System.out.println("1111111");
 //        }catch (RuntimeException e) {
@@ -93,10 +93,10 @@ public class BaseSteps {
     }
 
     // метод для получения значения driver
-    public WebDriver getDriver() {
-        System.out.println("222222");
-        return driver;
-
-    }
+//    public WebDriver getDriver() {
+//        System.out.println("222222");
+//        return driver;
+//
+//    }
 
 }
