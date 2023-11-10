@@ -2,7 +2,7 @@ package steps;
 
 import hooks.Hooks;
 import utils.Properties;
-
+import  java.util.Random;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -29,8 +29,10 @@ public class BaseSteps {
     // задаем параметры открытия браузера
     public void setupDriver() {
 
+        final Random random = new Random();
+
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
-        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver.log");
+        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver" + random + ".log");
 
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
