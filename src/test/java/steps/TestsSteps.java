@@ -47,12 +47,7 @@ public class TestsSteps {
 
     @Дано("Открыта страница сайта {string}")
     public  void открыта_страница_сайта(String text) {
-        System.out.println("3333333");
-//        BaseSteps baseSteps = new BaseSteps();
-//        baseSteps.setupDriver(); // Вызов метода setupDriver() из класса BaseSteps
-//        driver = baseSteps.getDriver(); // присваиваем driver значение из BaseSteps
         driver.get("http://"+Properties.getBaseUrl()+text);
-
     }
 
     @И ("Приняты куки")
