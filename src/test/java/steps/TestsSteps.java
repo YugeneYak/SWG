@@ -148,12 +148,9 @@ public class TestsSteps {
             actions.moveToElement(section).build().perform();
         } catch (Exception e) {
             method = Thread.currentThread().getStackTrace()[1].getMethodName();
-
             String requiredMessage = e.getMessage().split("\\(Session info:")[0];
-
             processException(scenarioName, method, requiredMessage);
             Assert.fail(e.getMessage());
-
         }
     }
 
