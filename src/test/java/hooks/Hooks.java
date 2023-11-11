@@ -1,5 +1,6 @@
 package hooks;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import io.restassured.RestAssured;
@@ -20,7 +21,10 @@ public class Hooks {
     private static final Logger LOGGER = Logger.getLogger(Hooks.class.getName());
 
     private static int to = 90000;
-
+    @Before
+    public void before(Scenario scenario) {
+        System.out.println("The name of the scenario is: " + scenario.getName());
+    }
     /**
      * Настройка вебдрайвера, выполняется перед каждым тестом
      */
