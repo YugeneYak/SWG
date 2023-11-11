@@ -18,10 +18,6 @@ public class BaseSteps {
 
          String os = System.getProperty("os.name").toLowerCase();
 
-        System.out.println("1111111111");
-System.out.println(os);
-        System.out.println("2222222222");
-
         ChromeOptions options = new ChromeOptions();
 
         if (os.contains("win")) {
@@ -36,6 +32,11 @@ System.out.println(os);
             // настройки для операционной системы macOS
             System.setProperty("webdriver.chrome.driver", "путь_к_драйверу_для_macOS");
         } else if (os.contains("nix") || os.contains("nux") || os.contains("sol")) {
+
+            System.out.println("nix");
+            System.out.println(os);
+            System.out.println("nix");
+
             // настройки для операционных систем на основе Unix
             System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
 
