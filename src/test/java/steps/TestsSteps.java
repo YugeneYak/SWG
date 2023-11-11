@@ -55,7 +55,7 @@ public class TestsSteps {
 
 //        Assert.assertTrue(driver.findElement(byCssSelector(".cookie_button")).isDisplayed());
         driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
-
+        driver.quit();
     }
 
     @Тогда("Открываем меню каталога")
