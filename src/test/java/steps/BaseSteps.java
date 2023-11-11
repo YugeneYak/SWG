@@ -9,14 +9,20 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.logging.Logger;
 
 public class BaseSteps {
+//    private static final Logger LOGGER = Logger.getLogger(Hooks.class.getName());
 
     private  WebDriver driver;
 
     // задаем параметры открытия браузера
     public void setupDriver() {
 
+        final Random random = new Random();
+
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
+//        System.setProperty("webdriver.chrome.logfile", "/var/lib/jenkins/workspace/chromedriver/chromedriver" + random + ".log");
+
         ChromeOptions options = new ChromeOptions();
+        options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
         options.addArguments("--no-sandbox"); // Bypass OS security model
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--headless");
