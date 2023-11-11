@@ -70,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/BaseSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="306">
+              <caret line="24" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2929#2930#0" expanded="true" />
@@ -484,21 +484,7 @@
       <workItem from="1697979636257" duration="39546000" />
       <workItem from="1699007535894" duration="5684000" />
       <workItem from="1699345466228" duration="64999000" />
-      <workItem from="1699614544561" duration="8798000" />
-    </task>
-    <task id="LOCAL-00122" summary="Test">
-      <created>1699529640718</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1699529640718</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Test">
-      <created>1699529886082</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1699529886082</updated>
+      <workItem from="1699614544561" duration="9160000" />
     </task>
     <task id="LOCAL-00124" summary="Test">
       <created>1699530126056</created>
@@ -829,7 +815,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699685293719</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="Test">
+      <created>1699685426539</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1699685426539</updated>
+    </task>
+    <task id="LOCAL-00172" summary="Test">
+      <created>1699685731897</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1699685731897</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -865,7 +865,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167717000" />
+    <option name="totallyTimeSpent" value="168079000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1217,8 +1217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/BaseSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="306">
+          <caret line="24" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2929#2930#0" expanded="true" />
