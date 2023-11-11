@@ -146,6 +146,7 @@ public class TestsSteps {
             Actions actions = new Actions(driver);
             WebElement section = driver.findElement(byXpath("//*[contains(text(),'" + sectionName + "')]"));
             actions.moveToElement(section).build().perform();
+            return;
         } catch (Exception e) {
             method = Thread.currentThread().getStackTrace()[1].getMethodName();
             String requiredMessage = e.getMessage().split("\\(Session info:")[0];
