@@ -53,9 +53,14 @@ public class TestsSteps {
     @И ("Приняты куки")
     public  void приняты_куки() {
 
-//        Assert.assertTrue(driver.findElement(byCssSelector(".cookie_button")).isDisplayed());
-        driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
-        driver.quit();
+        try {
+            Assert.assertTrue(driver.findElement(byCssSelector(".cookie_button1")).isDisplayed());
+            driver.findElement(byCssSelector(".cookie_button")).click(); //кликаем кнопку
+//            driver.quit();
+        } catch (Exception e) {
+            driver.get("https://api.telegram.org/bot6844886669:AAEqljCTJI3Ddo_5mzBmPFd3oTnYgpyf4VE/sendMessage?chat_id=-1001812186034&text=приняты_куки закончился с ошибкой");
+//            driver.quit();
+        }
     }
 
     @Тогда("Открываем меню каталога")

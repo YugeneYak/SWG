@@ -20,7 +20,6 @@ public class BaseSteps {
 
             ChromeOptions options = new ChromeOptions();
             // настройки для операционной системы Windows
-//            System.setProperty("webdriver.chrome.driver", "D:\\Users\\yugene\\Documents\\test\\src\\test\\resources\\chromedriver\\chromedriver.exe");
             System.setProperty("webdriver.chrome.driver", "C:\\SWG_Tests\\src\\test\\resources\\chromedriver\\chromedriver.exe");
             options.setCapability("acceptInsecureCerts", true);
             options.setCapability("pageLoadStrategy", "eager");
@@ -29,6 +28,7 @@ public class BaseSteps {
             driver = new ChromeDriver(options); // присваиваем значение driver
 
         } else if (os.contains("nix") || os.contains("nux") || os.contains("sol")) {
+            // настройки для операционной системы linux
             System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.setBinary("/chrome/linux-119.0.6045.105/chrome-linux64/chrome");
