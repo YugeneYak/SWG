@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -47,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="227" column="15" selection-start-line="227" selection-start-column="15" selection-end-line="227" selection-end-column="15" />
+            <state relative-caret-position="361">
+              <caret line="235" column="21" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="235" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -169,8 +169,8 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/BaseSteps.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" />
       </list>
     </option>
   </component>
@@ -545,21 +545,7 @@
       <workItem from="1697979636257" duration="39546000" />
       <workItem from="1699007535894" duration="5684000" />
       <workItem from="1699345466228" duration="64999000" />
-      <workItem from="1699614544561" duration="27106000" />
-    </task>
-    <task id="LOCAL-00131" summary="Test">
-      <created>1699536418064</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1699536418064</updated>
-    </task>
-    <task id="LOCAL-00132" summary="Test">
-      <created>1699536932527</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1699536932527</updated>
+      <workItem from="1699614544561" duration="28413000" />
     </task>
     <task id="LOCAL-00133" summary="Test">
       <created>1699537354200</created>
@@ -890,7 +876,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699708308052</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="Test">
+      <created>1699708447340</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1699708447340</updated>
+    </task>
+    <task id="LOCAL-00181" summary="Test">
+      <created>1699708625044</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1699708625044</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -926,7 +926,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186025000" />
+    <option name="totallyTimeSpent" value="187332000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1291,8 +1291,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="227" column="15" selection-start-line="227" selection-start-column="15" selection-end-line="227" selection-end-column="15" />
+        <state relative-caret-position="361">
+          <caret line="235" column="21" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="235" selection-end-column="21" />
         </state>
       </provider>
     </entry>
