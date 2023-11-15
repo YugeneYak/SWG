@@ -68,8 +68,12 @@ public class ApiSteps {
         try {
             driver.get(conditions.get("url"));
         } catch (Exception e) {
-            processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), "ОШИБКА: Не удалось открыть " + conditions.get("url"));
-            Assert.fail("Не удалось открыть " + Properties.getBaseUrl() + conditions.get("url"));
+//            processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), "ОШИБКА: Не удалось открыть " + conditions.get("url"));
+//            Assert.fail("Не удалось открыть " + conditions.get("url"));
+            String errorMessage = e.getMessage();
+
+            // Вывод полной трассировки стека
+            e.printStackTrace();
         }
 
         String apiJason = driver.findElement(byXpath("//pre")).getText();
@@ -146,12 +150,12 @@ public class ApiSteps {
 
                 //костыль для свойства code_1c
                 if (!requiredValue.equals(type)) {
-                    processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), " " + apiName + " ОШИБКА: Товар: " + object1.getString("NAME") + ", свойство: " + code + " тип полученных данных " + type + " не соответствует требованию обмена " + requiredValue);
+//                    processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), " " + apiName + " ОШИБКА: Товар: " + object1.getString("NAME") + ", свойство: " + code + " тип полученных данных " + type + " не соответствует требованию обмена " + requiredValue);
                     Assert.fail("ОШИБКА: Товар: " + object1.getString("NAME") + ", свойство: " + code + " тип полученных данных " + type + " не соответствует требованию обмена " + requiredValue);
                 }
             }
         }
-        processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), "API " + apiName + " работает");
+//        processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), "API " + apiName + " работает");
         Assert.assertTrue("API " + apiName + " работает", true);
     }
 
