@@ -71,9 +71,10 @@ public class ApiSteps {
 //            processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), "ОШИБКА: Не удалось открыть " + conditions.get("url"));
 //            Assert.fail("Не удалось открыть " + conditions.get("url"));
             String errorMessage = e.getMessage();
-
+System.out.println(errorMessage);
             // Вывод полной трассировки стека
             e.printStackTrace();
+            
         }
 
         String apiJason = driver.findElement(byXpath("//pre")).getText();
