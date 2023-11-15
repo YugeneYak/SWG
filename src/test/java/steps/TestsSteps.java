@@ -15,12 +15,11 @@ import org.openqa.selenium.WebElement;
 import utils.Properties;
 import org.openqa.selenium.interactions.Actions;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.*;
 import cucumber.api.java.Before;
 
 import static com.codeborne.selenide.Selectors.*;
+import static steps.BaseSteps.processException;
 
 public class TestsSteps {
 
@@ -52,7 +51,7 @@ public class TestsSteps {
         } catch (Exception e) {
             method = Thread.currentThread().getStackTrace()[1].getMethodName();
 
-            processException(scenarioName, method, "Не удалось открыть " + Properties.getBaseUrl() + text);
+            processException(scenarioName, method, "ОШИБКА: Не удалось открыть " + Properties.getBaseUrl() + text);
             Assert.fail("Не удалось открыть " + Properties.getBaseUrl() + text);
         }
     }
@@ -107,11 +106,12 @@ public class TestsSteps {
         }
 
         if (notFoundItems.isEmpty()) {
+            method = Thread.currentThread().getStackTrace()[1].getMethodName();
+            processException(scenarioName, method, "Все пункты меню найдены");
             Assert.assertTrue("Все пункты меню найдены", true);
         } else {
             method = Thread.currentThread().getStackTrace()[1].getMethodName();
-
-            processException(scenarioName, method, "Не найдены пункты меню: " + notFoundItems);
+            processException(scenarioName, method, "ОШИБКА: Не найдены пункты меню: " + notFoundItems);
             Assert.fail("Не найдены пункты меню: " + notFoundItems);
         }
         driver.quit();
@@ -175,24 +175,17 @@ public class TestsSteps {
         }
 
         if (notFoundItems.isEmpty()) {
+            method = Thread.currentThread().getStackTrace()[1].getMethodName();
+            processException(scenarioName, method, "Все пункты меню найдены");
             Assert.assertTrue("Все пункты меню найдены", true);
         } else {
             method = Thread.currentThread().getStackTrace()[1].getMethodName();
 
-            processException(scenarioName, method, "Не найден фильтр: " + notFoundItems);
+            processException(scenarioName, method, "ОШИБКА: Не найден фильтр: " + notFoundItems);
             Assert.fail("Не найден фильтр: " + notFoundItems);
         }
         driver.quit();
 
     }
 
-    //отлов ошибок в телегу
-    public void processException(String scenarioName, String method, String errorMessage) {
-
-        driver.get("https://api.telegram.org/bot6844886669:AAEqljCTJI3Ddo_5mzBmPFd3oTnYgpyf4VE/sendMessage?chat_id=-1001812186034&text=" +
-                "Сценарий: " + scenarioName + "" + System.lineSeparator() +
-                "%0AШаг: " + method + " " + System.lineSeparator() +
-                "%0AОшибка: " + errorMessage);
-        driver.quit();
-    }
 }
