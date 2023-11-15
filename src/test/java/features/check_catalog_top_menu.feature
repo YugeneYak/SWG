@@ -1,5 +1,5 @@
 # language: ru
-@testy1
+@testy11
 @checkCatalogMenu
 
 Функция: Проверка полноты меню каталога
