@@ -65,22 +65,15 @@ public class ApiSteps {
         }
 
         //данные обмена обмена с конфигуратором
-        try {
             driver.get(conditions.get("url"));
             driver.getCurrentUrl();
             System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
-        } catch (Exception e) {
-            System.out.println("errorMessage = " + conditions.get("url"));
-            String errorMessage = e.getMessage();
-            System.out.println(errorMessage);
-            System.out.println("errorMessage1");
-            // Вывод полной трассировки стека
-            e.printStackTrace();
-            System.out.println("printStackTrace");
 
-            processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), "ОШИБКА: Не удалось открыть " + conditions.get("url"));
-            Assert.fail("Не удалось открыть " + conditions.get("url"));
-        }
+            if (conditions.get("url").equals(driver.getCurrentUrl())) {
+                System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
+                driver.quit();
+                Assert.fail("Не удалось открыть " + conditions.get("url"));
+            }
 
         String apiJason = driver.findElement(byXpath("//pre")).getText();
 
