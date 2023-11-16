@@ -1,5 +1,5 @@
 # language: ru
-@testy
+@testy1
 @checkApi
 
 Функция: Проверка API обмена сайт-конфигуратор
