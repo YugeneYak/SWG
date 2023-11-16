@@ -66,7 +66,8 @@ public class ApiSteps {
 
         //данные обмена обмена с конфигуратором
             driver.get(conditions.get("url"));
-            driver.getCurrentUrl();
+        System.out.println("driver.getPageSource = " + driver.getPageSource());
+        System.out.println("driver.getTitle = " + driver.getTitle());
             System.out.println("driver.getCurrentUrl0 = " + driver.getCurrentUrl());
 
             if (!conditions.get("url").equals(driver.getCurrentUrl())) {
