@@ -67,6 +67,8 @@ public class ApiSteps {
         //данные обмена обмена с конфигуратором
         try {
             driver.get(conditions.get("url"));
+            driver.getCurrentUrl();
+            System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
         } catch (Exception e) {
             System.out.println("errorMessage = " + conditions.get("url"));
             String errorMessage = e.getMessage();
