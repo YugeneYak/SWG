@@ -37,7 +37,7 @@ public class ApiSteps {
         // Создание экземпляра класса BaseSteps
         BaseSteps baseSteps = new BaseSteps();
         // Инициализация драйвера
-//        baseSteps.setupDriver();
+        baseSteps.setupDriver();
         // Задание значения драйвера
         driver = baseSteps.getDriver();
     }
