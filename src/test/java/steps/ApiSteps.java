@@ -69,9 +69,10 @@ public class ApiSteps {
             driver.getCurrentUrl();
             System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
 
-            if (conditions.get("url").equals(driver.getCurrentUrl())) {
+            if (!conditions.get("url").equals(driver.getCurrentUrl())) {
                 System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
                 driver.quit();
+                processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), "ОШИБКА: Не удалось открыть " + conditions.get("url"));
                 Assert.fail("Не удалось открыть " + conditions.get("url"));
             }
 
