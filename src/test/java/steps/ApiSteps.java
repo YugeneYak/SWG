@@ -68,6 +68,7 @@ public class ApiSteps {
         try {
             driver.get(conditions.get("url"));
         } catch (Exception e) {
+            driver.quit();
             System.out.println("errorMessage = " + conditions.get("url"));
             String errorMessage = e.getMessage();
             System.out.println(errorMessage);
@@ -154,11 +155,13 @@ public class ApiSteps {
 
                 //костыль для свойства code_1c
                 if (!requiredValue.equals(type)) {
+                    driver.quit();
                     processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), " " + apiName + " ОШИБКА: Товар: " + object1.getString("NAME") + ", свойство: " + code + " тип полученных данных " + type + " не соответствует требованию обмена " + requiredValue);
                     Assert.fail("ОШИБКА: Товар: " + object1.getString("NAME") + ", свойство: " + code + " тип полученных данных " + type + " не соответствует требованию обмена " + requiredValue);
                 }
             }
         }
+        driver.quit();
         processException(scenarioName, Thread.currentThread().getStackTrace()[1].getMethodName(), "API " + apiName + " работает");
         Assert.assertTrue("API " + apiName + " работает", true);
     }
