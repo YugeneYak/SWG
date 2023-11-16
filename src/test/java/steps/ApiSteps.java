@@ -68,7 +68,7 @@ public class ApiSteps {
         try {
             driver.get(conditions.get("url"));
         } catch (Exception e) {
-            System.out.println("errorMessage");
+            System.out.println("errorMessage = " + conditions.get("url"));
             String errorMessage = e.getMessage();
             System.out.println(errorMessage);
             System.out.println("errorMessage1");

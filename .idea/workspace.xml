@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/ApiSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
+            <state relative-caret-position="296">
+              <caret line="70" column="72" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -576,21 +576,7 @@
       <workItem from="1699007535894" duration="5684000" />
       <workItem from="1699345466228" duration="64999000" />
       <workItem from="1699614544561" duration="101335000" />
-      <workItem from="1700114694809" duration="1082000" />
-    </task>
-    <task id="LOCAL-00151" summary="Test">
-      <created>1699605312223</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1699605312223</updated>
-    </task>
-    <task id="LOCAL-00152" summary="Test">
-      <created>1699606085396</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1699606085396</updated>
+      <workItem from="1700114694809" duration="3414000" />
     </task>
     <task id="LOCAL-00153" summary="Test">
       <created>1699606368035</created>
@@ -921,7 +907,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700030666656</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="Добавлены тесты API">
+      <created>1700115800916</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1700115800916</updated>
+    </task>
+    <task id="LOCAL-00201" summary="Добавлены тесты API">
+      <created>1700116838634</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1700116838634</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -957,7 +957,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261336000" />
+    <option name="totallyTimeSpent" value="263668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1371,8 +1371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/ApiSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
+        <state relative-caret-position="296">
+          <caret line="70" column="72" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
