@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f6b8323-28cd-4770-8ec2-7971d2411dba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/check_API_menu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/check_API_menu.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ApiSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ApiSteps.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -41,25 +39,25 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/check_API_menu.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
               <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/check_API_menu.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/ApiSteps.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+              <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,8 +195,8 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/BaseSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/TestsSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/ApiSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" />
         <option value="$PROJECT_DIR$/src/test/java/features/check_API_menu.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature" />
       </list>
     </option>
   </component>
@@ -588,21 +586,7 @@
       <workItem from="1699007535894" duration="5684000" />
       <workItem from="1699345466228" duration="64999000" />
       <workItem from="1699614544561" duration="101335000" />
-      <workItem from="1700114694809" duration="10285000" />
-    </task>
-    <task id="LOCAL-00163" summary="Test">
-      <created>1699611352369</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1699611352369</updated>
-    </task>
-    <task id="LOCAL-00164" summary="Test">
-      <created>1699611893864</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1699611893864</updated>
+      <workItem from="1700114694809" duration="11567000" />
     </task>
     <task id="LOCAL-00165" summary="Test">
       <created>1699612732994</created>
@@ -933,7 +917,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700131955440</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="Добавлены тесты API">
+      <created>1700139240722</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1700139240722</updated>
+    </task>
+    <task id="LOCAL-00213" summary="Добавлены тесты API">
+      <created>1700140097168</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1700140097168</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -969,7 +967,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270539000" />
+    <option name="totallyTimeSpent" value="271821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1374,27 +1372,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ApiSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/check_catalog_top_menu.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/check_API_menu.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ApiSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
